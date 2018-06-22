@@ -20,8 +20,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4000010271289014}
   - component: {fileID: 65000010862455582}
-  - component: {fileID: 114000010702457702}
   - component: {fileID: 54000012015491888}
+  - component: {fileID: 114670495628978490}
   m_Layer: 0
   m_Name: Tanky Enemy
   m_TagString: Enemy
@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 4000012325383840}
   - component: {fileID: 33000012062642114}
   - component: {fileID: 23000012106978124}
-  - component: {fileID: 114000011584806450}
+  - component: {fileID: 114046274498085852}
   m_Layer: 0
   m_Name: Wheels Front
   m_TagString: Untagged
@@ -57,7 +57,7 @@ GameObject:
   - component: {fileID: 4000013431683744}
   - component: {fileID: 33000012359681054}
   - component: {fileID: 23000012155592546}
-  - component: {fileID: 114000013203846100}
+  - component: {fileID: 114979944497613884}
   m_Layer: 0
   m_Name: Wheels Back
   m_TagString: Untagged
@@ -89,7 +89,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010028662668}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 4.15}
+  m_LocalPosition: {x: -24.91, y: 0, z: 13.05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4000012400987920}
@@ -287,23 +287,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.8, z: 2.5}
   m_Center: {x: 0, y: 1, z: 0.2}
---- !u!114 &114000010702457702
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000010028662668}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32cc2313d213a804db1167d015b8cb56, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 200
-  health: 200
-  moveSpeed: 1.5
-  goldDrop: 50
-  pathIndex: 0
---- !u!114 &114000011584806450
+--- !u!114 &114046274498085852
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -311,11 +295,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000010688178210}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9d918ce60094de4d8ffc110e6f54a07, type: 3}
+  m_Script: {fileID: 11500000, guid: 4d044d944a59f504d88e7b16efd56ae2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotation: {x: 0, y: -180, z: 0}
---- !u!114 &114000013203846100
+  roation: {x: 0, y: -180, z: 0}
+--- !u!114 &114670495628978490
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010028662668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90743afc581379f489c97b14b51e3f92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  health: 100
+  moveSpeed: 3
+  goldDrop: 10
+  pathIndex: 0
+  wayPointIndex: 0
+--- !u!114 &114979944497613884
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -323,7 +324,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000012224933576}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9d918ce60094de4d8ffc110e6f54a07, type: 3}
+  m_Script: {fileID: 11500000, guid: 4d044d944a59f504d88e7b16efd56ae2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotation: {x: 0, y: -300, z: 0}
+  roation: {x: 0, y: -300, z: 0}
