@@ -13,7 +13,7 @@ public class Enemy : MonoBehaviour {
 	public int wayPointIndex = 0;
 
 	void Start () {
-		
+		EnemyManager.Instance.RegisterEnemy(this);
 	}
 	
 	
@@ -33,7 +33,10 @@ public class Enemy : MonoBehaviour {
 
 	void Die () {
 		if(gameObject != null){
-			Destroy(gameObject);
+			EnemyManager.Instance.Unregister(this);
+			gameObject.AddComponent<AutoScaler>().scaleSpeed = -2;
+			enabled = false;
+			Destroy(gameObject, 0.3f);
 		}
 	}
 
