@@ -50,7 +50,8 @@ public class Enemy : MonoBehaviour {
 
 		transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
 
-		transform.LookAt(targetPosition);
+		transform.localRotation = UtilityMethods.SmoothyLook(transform, targetPosition);
+
 		
 		// If the enemy is very close to the targetWaypoint, set the next waypoint as target
 		if(Vector3.Distance(transform.position, targetPosition) < .1f){
