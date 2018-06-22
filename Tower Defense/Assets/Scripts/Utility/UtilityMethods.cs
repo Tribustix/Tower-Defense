@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class UtilityMethods{
 
-	public static void MoveUiElementToWorldPosition(RectTransform RectTransform, Vector3 worldPosition){
+	public static void MoveUiElementToWorldPosition (RectTransform RectTransform, Vector3 worldPosition) {
 		Vector2 screenPoint = Camera.main.WorldToScreenPoint(worldPosition);
 		RectTransform.position = screenPoint;
 	}
 
 
 	//This method allows GameObjects to rotate and look at a certain position smoothly.
-	public static Quaternion SmoothyLook(Transform fromTransform, Vector3 toVector3){
+	public static Quaternion SmoothyLook (Transform fromTransform, Vector3 toVector3) {
 		
 		// This method will stop if the origin point and destination are the same
 		if(fromTransform.position == toVector3){
