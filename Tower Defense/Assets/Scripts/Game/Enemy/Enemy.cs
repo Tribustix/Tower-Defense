@@ -29,6 +29,7 @@ public class Enemy : MonoBehaviour {
 
 	void OnGoToLastWayPoint () {
 		Die();
+		GameManager.Instance.OnEnemyEscape();
 	}
 
 	void Die () {
@@ -40,13 +41,19 @@ public class Enemy : MonoBehaviour {
 		}
 	}
 
+	void DropGold () {
+		GameManager.Instance.gold += goldDrop;
+	}
+
 	public void TakeDamage (float amountOfDamage) {
 		health -= amountOfDamage;
 
 		if(health <= 0){
 			Die();
+			DropGold();
 		}
 	}
+
 
 	public void UpdateMovement () {
 		Vector3 targetPosition = WayPointManager.Instance.Paths[pathIndex].WayPoints[wayPointIndex].position;

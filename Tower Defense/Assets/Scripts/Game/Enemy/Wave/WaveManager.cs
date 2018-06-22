@@ -32,6 +32,7 @@ public class WaveManager : MonoBehaviour {
 				activeWave = enemyWave;
 				activatedWaves.Add(enemyWave);
 				spawnCounter = 0f;
+				GameManager.Instance.waveNumber++;
 
 				break;
 			}
@@ -53,6 +54,7 @@ public class WaveManager : MonoBehaviour {
 					GameObject enemy = (GameObject) Instantiate(activeWave.listOfEnemies[0], WayPointManager.Instance.GetSpawnPosition(activeWave.pathIndex), Quaternion.identity);
 					enemy.GetComponent<Enemy>().pathIndex = activeWave.pathIndex;
 					activeWave.listOfEnemies.RemoveAt(0);
+					GameManager.Instance.enemySpawningOver = true;
 				}else{
 					activeWave = null;
 
