@@ -2458,6 +2458,79 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 718909198}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &719423543
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4000010963557352, guid: 5a47045c1e027f64cb0bc4809abf9f07, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010963557352, guid: 5a47045c1e027f64cb0bc4809abf9f07, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010963557352, guid: 5a47045c1e027f64cb0bc4809abf9f07, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010963557352, guid: 5a47045c1e027f64cb0bc4809abf9f07, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010963557352, guid: 5a47045c1e027f64cb0bc4809abf9f07, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010963557352, guid: 5a47045c1e027f64cb0bc4809abf9f07, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010963557352, guid: 5a47045c1e027f64cb0bc4809abf9f07, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010963557352, guid: 5a47045c1e027f64cb0bc4809abf9f07, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114000012129717018, guid: 5a47045c1e027f64cb0bc4809abf9f07, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: 5a47045c1e027f64cb0bc4809abf9f07, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1 &719423544 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000012973691242, guid: 5a47045c1e027f64cb0bc4809abf9f07,
+    type: 2}
+  m_PrefabInternal: {fileID: 719423543}
+--- !u!4 &719423545 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4000014229670988, guid: 5a47045c1e027f64cb0bc4809abf9f07,
+    type: 2}
+  m_PrefabInternal: {fileID: 719423543}
+--- !u!114 &719423546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 719423544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54b55d446b3bc1a4d926ee13ced310bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackPower: 3
+  timeBetweenAttacksInSeconds: 2
+  aggroRadius: 8
+  towerLevel: 1
+  type: 0
+  shootSound: {fileID: 8300000, guid: d78cadc10cac85f408f28b0ad83c08c4, type: 3}
+  towerPieceToAim: {fileID: 719423545}
+  targetEnemy: {fileID: 0}
+  stonePrefab: {fileID: 0}
 --- !u!1 &730890309
 GameObject:
   m_ObjectHideFlags: 0
