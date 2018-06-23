@@ -462,52 +462,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 110665038}
---- !u!1001 &166246656
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4000010963557352, guid: 5a47045c1e027f64cb0bc4809abf9f07, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 25.21
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010963557352, guid: 5a47045c1e027f64cb0bc4809abf9f07, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010963557352, guid: 5a47045c1e027f64cb0bc4809abf9f07, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -13.97
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010963557352, guid: 5a47045c1e027f64cb0bc4809abf9f07, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010963557352, guid: 5a47045c1e027f64cb0bc4809abf9f07, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010963557352, guid: 5a47045c1e027f64cb0bc4809abf9f07, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010963557352, guid: 5a47045c1e027f64cb0bc4809abf9f07, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010963557352, guid: 5a47045c1e027f64cb0bc4809abf9f07, type: 2}
-      propertyPath: m_RootOrder
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1000012973691242, guid: 5a47045c1e027f64cb0bc4809abf9f07, type: 2}
-      propertyPath: m_Name
-      value: StoneTower (2)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 5a47045c1e027f64cb0bc4809abf9f07, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &221173526
 GameObject:
   m_ObjectHideFlags: 0
@@ -2504,48 +2458,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 718909198}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &719423543
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4000010963557352, guid: 5a47045c1e027f64cb0bc4809abf9f07, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010963557352, guid: 5a47045c1e027f64cb0bc4809abf9f07, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010963557352, guid: 5a47045c1e027f64cb0bc4809abf9f07, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010963557352, guid: 5a47045c1e027f64cb0bc4809abf9f07, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010963557352, guid: 5a47045c1e027f64cb0bc4809abf9f07, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010963557352, guid: 5a47045c1e027f64cb0bc4809abf9f07, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010963557352, guid: 5a47045c1e027f64cb0bc4809abf9f07, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010963557352, guid: 5a47045c1e027f64cb0bc4809abf9f07, type: 2}
-      propertyPath: m_RootOrder
-      value: 9
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 5a47045c1e027f64cb0bc4809abf9f07, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &730890309
 GameObject:
   m_ObjectHideFlags: 0
@@ -2657,6 +2569,57 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 730890309}
+--- !u!1 &737604949
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 737604950}
+  - component: {fileID: 737604951}
+  m_Layer: 0
+  m_Name: TowerManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &737604950
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 737604949}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2098930652}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &737604951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 737604949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0790e9393f4ff304bad0bd95c85367a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stoneTowerPrefab: {fileID: 1000012973691242, guid: 5a47045c1e027f64cb0bc4809abf9f07,
+    type: 2}
+  fireTowerPrefab: {fileID: 0}
+  iceTowerPrefab: {fileID: 0}
+  TowerCosts:
+  - TowerType: 0
+    cost: 100
+  - TowerType: 1
+    cost: 200
+  - TowerType: 2
+    cost: 300
 --- !u!1 &747795720
 GameObject:
   m_ObjectHideFlags: 0
@@ -3757,52 +3720,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1249731830}
---- !u!1001 &1253597564
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4000010963557352, guid: 5a47045c1e027f64cb0bc4809abf9f07, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 13.72
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010963557352, guid: 5a47045c1e027f64cb0bc4809abf9f07, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010963557352, guid: 5a47045c1e027f64cb0bc4809abf9f07, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -22.86
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010963557352, guid: 5a47045c1e027f64cb0bc4809abf9f07, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010963557352, guid: 5a47045c1e027f64cb0bc4809abf9f07, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010963557352, guid: 5a47045c1e027f64cb0bc4809abf9f07, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010963557352, guid: 5a47045c1e027f64cb0bc4809abf9f07, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010963557352, guid: 5a47045c1e027f64cb0bc4809abf9f07, type: 2}
-      propertyPath: m_RootOrder
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 1000012973691242, guid: 5a47045c1e027f64cb0bc4809abf9f07, type: 2}
-      propertyPath: m_Name
-      value: StoneTower (3)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 5a47045c1e027f64cb0bc4809abf9f07, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &1295114398
 GameObject:
   m_ObjectHideFlags: 0
@@ -6950,6 +6867,7 @@ Transform:
   - {fileID: 523332380}
   - {fileID: 369442901}
   - {fileID: 1437136494}
+  - {fileID: 737604950}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
