@@ -89,7 +89,7 @@ GameObject:
   - component: {fileID: 4000010963557352}
   - component: {fileID: 82000013494001384}
   - component: {fileID: 65000011305424490}
-  - component: {fileID: 114000012129717018}
+  - component: {fileID: 114018742328506222}
   m_Layer: 0
   m_Name: StoneTower
   m_TagString: Untagged
@@ -340,7 +340,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!114 &114000012129717018
+--- !u!114 &114018742328506222
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -348,28 +348,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000012973691242}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -1862395651, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Script: {fileID: 11500000, guid: 54b55d446b3bc1a4d926ee13ced310bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 0}
-          m_MethodName: ShowTowerInfo
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
-        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  delegates: []
+  attackPower: 3
+  timeBetweenAttacksInSeconds: 2
+  aggroRadius: 8
+  towerLevel: 1
+  type: 0
+  shootSound: {fileID: 8300000, guid: d78cadc10cac85f408f28b0ad83c08c4, type: 3}
+  towerPieceToAim: {fileID: 4000014229670988}
+  targetEnemy: {fileID: 0}
+  stonePrefab: {fileID: 1000012378032816, guid: ea3db759f8d834de0a42a0c7c78b8461,
+    type: 2}
 --- !u!198 &198000010694424282
 ParticleSystem:
   m_ObjectHideFlags: 1
