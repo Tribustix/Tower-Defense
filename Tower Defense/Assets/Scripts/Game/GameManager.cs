@@ -49,6 +49,7 @@ public class GameManager : MonoBehaviour {
 	void OnGameWin () {
 		AudioSource.PlayClipAtPoint(gameWinSound, myCamera.transform.position);
 		gameOver = true;
+		UIManager.Instance.ShowWinScreen();
 	}
 
 	void OnGameLose () {
@@ -57,11 +58,16 @@ public class GameManager : MonoBehaviour {
 		AudioSource.PlayClipAtPoint(gameLoseSound, myCamera.transform.position);
 		EnemyManager.Instance.DestroyAllEnemies();
 		WaveManager.Instance.StopSpawning();
+		UIManager.Instance.ShowLoseScreen();
 	}
 
 	public void QuitToTitleScreen () {
 		SceneManager.LoadScene("Main Menu");
 	}
+
+	public void RetryLevel () {
+    SceneManager.LoadScene("Game");
+  }
 
 	public void OnEnemyEscape () {
 		escapedEnemies++;

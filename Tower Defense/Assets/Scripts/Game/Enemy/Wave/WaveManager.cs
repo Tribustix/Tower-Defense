@@ -8,7 +8,7 @@ public class WaveManager : MonoBehaviour {
 	public List<EnemyWave> enemyWaves = new List<EnemyWave>();
 	
 	private  float elapsedTime = 0f;
-	private EnemyWave  activeWave;
+	private EnemyWave activeWave;
 	private float spawnCounter = 0f;
 	private List<EnemyWave> activatedWaves = new List<EnemyWave>();
 
@@ -46,20 +46,20 @@ public class WaveManager : MonoBehaviour {
 		
 
 			if(spawnCounter >= activeWave.timeBetweenSpawnInSeconds){
-				spawnCounter = 0;
+				spawnCounter = 0f;
 			
 
 				//Check that a wave wasn't already started before, and the time spent in the level is past the start time of that wave
 				if(activeWave.listOfEnemies.Count != 0){
-					GameObject enemy = (GameObject) Instantiate(activeWave.listOfEnemies[0], WayPointManager.Instance.GetSpawnPosition(activeWave.pathIndex), Quaternion.identity);
+					GameObject enemy = (GameObject)Instantiate(activeWave.listOfEnemies[0], WayPointManager.Instance.GetSpawnPosition(activeWave.pathIndex), Quaternion.identity);
 					enemy.GetComponent<Enemy>().pathIndex = activeWave.pathIndex;
 					activeWave.listOfEnemies.RemoveAt(0);
-					GameManager.Instance.enemySpawningOver = true;
 				}else{
 					activeWave = null;
 
 					if(activatedWaves.Count == enemyWaves.Count){
 						// All waves are over
+						GameManager.Instance.enemySpawningOver = true;
 					}	
 				}
 			}
