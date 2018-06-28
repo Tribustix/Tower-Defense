@@ -41,7 +41,7 @@ public class Tower : MonoBehaviour {
 		}else{
 
 			if(towerPieceToAim){
-				SmoothlyLookAtTarget(towerPieceToAim.transform.position);
+				SmoothlyLookAtTarget(targetEnemy.transform.position);
 			}
 
 			if(attackCounter <= 0f){

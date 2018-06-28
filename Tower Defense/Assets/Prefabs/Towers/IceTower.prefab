@@ -71,6 +71,7 @@ GameObject:
   - component: {fileID: 82000014125708686}
   - component: {fileID: 65000010868094354}
   - component: {fileID: 114000011589473140}
+  - component: {fileID: 114102675294223432}
   m_Layer: 0
   m_Name: IceTower
   m_TagString: Untagged
@@ -455,7 +456,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 114102675294223432}
           m_MethodName: ShowTowerInfo
           m_Mode: 1
           m_Arguments:
@@ -469,6 +470,26 @@ MonoBehaviour:
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
+--- !u!114 &114102675294223432
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012819307948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24e105b3b513eed40bfe708f30ac6585, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackPower: 3
+  timeBetweenAttacksInSeconds: 1
+  aggroRadius: 5
+  towerLevel: 1
+  type: 2
+  shootSound: {fileID: 8300000, guid: 6b2d5dfc6cb3ae9439a812b2e3f73b93, type: 3}
+  towerPieceToAim: {fileID: 4000010401991362}
+  targetEnemy: {fileID: 0}
+  icePrefab: {fileID: 1000013253486108, guid: 84687a8d8a64e4b47aafa1e2840e8da2, type: 2}
 --- !u!198 &198000010297853182
 ParticleSystem:
   m_ObjectHideFlags: 1

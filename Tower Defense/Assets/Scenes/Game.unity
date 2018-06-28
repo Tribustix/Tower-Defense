@@ -3440,7 +3440,8 @@ MonoBehaviour:
     type: 2}
   fireTowerPrefab: {fileID: 1000012864226544, guid: 8b509d66d3dc3b146a4c70e14bb90bc4,
     type: 2}
-  iceTowerPrefab: {fileID: 0}
+  iceTowerPrefab: {fileID: 1000012819307948, guid: a13c986921726fb45a55b0ed82c536ac,
+    type: 2}
   TowerCosts:
   - TowerType: 0
     cost: 100
