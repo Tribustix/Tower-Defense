@@ -14,6 +14,7 @@ public class UIManager : MonoBehaviour {
 	public GameObject blackBackground;
 	public GameObject enemyHealthBarPrefab;
 	public GameObject centerWindow;
+	public GameObject damageCanvas;
 
 	public Transform enemyHealthBars;
 
@@ -97,6 +98,23 @@ public class UIManager : MonoBehaviour {
 
 		}
 
+	}
+
+	public void ShowDamage () {
+		StartCoroutine(DoDamageAnimation());
+	}
+
+	IEnumerator DoDamageAnimation () {
+
+		for(int i = 0; i < 3; i++){
+			yield return new WaitForSeconds(.1f);
+			damageCanvas.SetActive(true);
+
+			yield return new WaitForSeconds(.1f);
+			damageCanvas.SetActive(false);
+		}
+
+		
 	}
 
 
