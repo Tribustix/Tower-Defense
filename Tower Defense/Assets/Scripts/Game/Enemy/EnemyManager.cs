@@ -23,7 +23,7 @@ public class EnemyManager : MonoBehaviour {
 	}
 
 	// It returns a list of all enemies withing a certain range from the position given. LINQ line.
-	public List<Enemy> GetEnemiesInRage(Vector3 position, float range) {
+	public List<Enemy> GetEnemiesInRange(Vector3 position, float range) {
 		return Enemies.Where(enemy => Vector3.Distance(position, enemy.transform.position) <= range).ToList();
 	}
 

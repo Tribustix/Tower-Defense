@@ -3438,7 +3438,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stoneTowerPrefab: {fileID: 1000012973691242, guid: 5a47045c1e027f64cb0bc4809abf9f07,
     type: 2}
-  fireTowerPrefab: {fileID: 0}
+  fireTowerPrefab: {fileID: 1000012864226544, guid: 8b509d66d3dc3b146a4c70e14bb90bc4,
+    type: 2}
   iceTowerPrefab: {fileID: 0}
   TowerCosts:
   - TowerType: 0
