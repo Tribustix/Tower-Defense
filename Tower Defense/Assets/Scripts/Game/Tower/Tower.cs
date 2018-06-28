@@ -114,5 +114,9 @@ public class Tower : MonoBehaviour {
 		aggroRadius *= 1.2f;
 	}
 
+	public void ShowTowerInfo () {
+		UIManager.Instance.ShowTowerInfoWindow(this);
+	}
+
 
 }

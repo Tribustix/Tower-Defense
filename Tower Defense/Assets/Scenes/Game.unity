@@ -340,7 +340,7 @@ MonoBehaviour:
   m_EventMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_MaxRayIntersections: 1
+  m_MaxRayIntersections: 0
 --- !u!1 &65525481
 GameObject:
   m_ObjectHideFlags: 0
@@ -2495,6 +2495,7 @@ GameObject:
   - component: {fileID: 571075177}
   - component: {fileID: 571075176}
   - component: {fileID: 571075175}
+  - component: {fileID: 571075178}
   m_Layer: 5
   m_Name: TowerInfoWindow
   m_TagString: Untagged
@@ -2585,6 +2586,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 571075173}
+--- !u!114 &571075178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 571075173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0ac632a81a2f18469f3b17d6f629bed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tower: {fileID: 0}
+  txtInfo: {fileID: 1527685314}
+  txtUpgradeCost: {fileID: 490282956}
 --- !u!1 &575181979
 GameObject:
   m_ObjectHideFlags: 0
@@ -8140,7 +8155,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1774327688}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 571075178}
+        m_MethodName: UpgradeTower
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1774327688
@@ -9722,6 +9748,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   addTowerWindow: {fileID: 1722567330}
+  towerToInfoWindow: {fileID: 571075173}
   txtGold: {fileID: 1360237430}
   txtWave: {fileID: 110665042}
   txtEscapedEnemies: {fileID: 1517282190}
