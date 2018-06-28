@@ -482,7 +482,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackPower: 3
-  timeBetweenAttacksInSeconds: 1
+  timeBetweenAttacksInSeconds: 2
   aggroRadius: 5
   towerLevel: 1
   type: 2
