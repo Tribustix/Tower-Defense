@@ -352,7 +352,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54b55d446b3bc1a4d926ee13ced310bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackPower: 3
+  attackPower: 8
   timeBetweenAttacksInSeconds: 2
   aggroRadius: 8
   towerLevel: 1
