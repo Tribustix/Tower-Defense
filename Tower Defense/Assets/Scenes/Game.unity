@@ -9901,6 +9901,7 @@ MonoBehaviour:
   blackBackground: {fileID: 1029389071}
   enemyHealthBarPrefab: {fileID: 1000013260251260, guid: 675fe109f23546d40876f30b27e9c8f3,
     type: 2}
+  centerWindow: {fileID: 1061934687}
   enemyHealthBars: {fileID: 696279139}
   txtGold: {fileID: 1360237430}
   txtWave: {fileID: 110665042}
