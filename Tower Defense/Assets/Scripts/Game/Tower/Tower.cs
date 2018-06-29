@@ -16,11 +16,12 @@ public class Tower : MonoBehaviour {
 	public int towerLevel = 1;
 
 	public TowerType type;
-	public AudioClip shootSound;
 	public Transform towerPieceToAim;
 	public Enemy targetEnemy = null;
 	
 	private float attackCounter;
+
+	private AudioSource audioSource;
 
 	
 	public virtual void Update () {
@@ -45,7 +46,7 @@ public class Tower : MonoBehaviour {
 			}
 
 			if(attackCounter <= 0f){
-				AttackEnemy();
+				AttackEnemy(type);
 
 				attackCounter = timeBetweenAttacksInSeconds;
 			}
@@ -63,8 +64,19 @@ public class Tower : MonoBehaviour {
 		towerPieceToAim.localRotation = UtilityMethods.SmoothyLook(towerPieceToAim, target);
 	}
 
-	protected virtual void AttackEnemy () {
-		GetComponent<AudioSource>().PlayOneShot(shootSound, .15f);
+	protected virtual void AttackEnemy (TowerType type) {
+
+		switch(type){
+			case TowerType.Stone:
+			SoundManager.Instance.PlayOneShot(SoundManager.Instance.stoneTowerAttack, .45f);
+			break;
+			case TowerType.Ice:
+			SoundManager.Instance.PlayOneShot(SoundManager.Instance.iceTowerAttack, .45f);
+			break;
+			case TowerType.Fire:
+			SoundManager.Instance.PlayOneShot(SoundManager.Instance.fireTowerAttack, .45f);
+			break;
+		}
 	}
 
 	public List<Enemy> GetEnemiesInAggroRange () {

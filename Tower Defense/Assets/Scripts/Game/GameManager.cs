@@ -13,8 +13,6 @@ public class GameManager : MonoBehaviour {
 	public int maxAllowedEscapedEnemies = 5;
 	public bool enemySpawningOver;
 
-	public AudioClip gameWinSound;
-	public AudioClip gameLoseSound;
 	public Camera myCamera;
 
 	private bool gameOver;
@@ -27,7 +25,7 @@ public class GameManager : MonoBehaviour {
 	}
 	
 	void Start () {
-		
+
 	}
 	
 	void Update () {
@@ -47,15 +45,18 @@ public class GameManager : MonoBehaviour {
 	}
 
 	void OnGameWin () {
-		AudioSource.PlayClipAtPoint(gameWinSound, myCamera.transform.position);
+		
 		gameOver = true;
+
+		SoundManager.Instance.PlayOneShot(SoundManager.Instance.gameWin, 1);
+
 		UIManager.Instance.ShowWinScreen();
 	}
 
 	void OnGameLose () {
 		gameOver =  true;
-
-		AudioSource.PlayClipAtPoint(gameLoseSound, myCamera.transform.position);
+		
+		SoundManager.Instance.PlayOneShot(SoundManager.Instance.gameLose, 1);
 		EnemyManager.Instance.DestroyAllEnemies();
 		WaveManager.Instance.StopSpawning();
 		UIManager.Instance.ShowLoseScreen();

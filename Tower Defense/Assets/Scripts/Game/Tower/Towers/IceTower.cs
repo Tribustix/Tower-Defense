@@ -20,8 +20,8 @@ public class IceTower : Tower {
 		}
 	}
 
-	protected override void AttackEnemy () {
-		base.AttackEnemy();
+	protected override void AttackEnemy (TowerType type) {
+		base.AttackEnemy(type);
 		
 		GameObject ice = (GameObject)Instantiate(icePrefab, towerPieceToAim.position, Quaternion.identity);
 

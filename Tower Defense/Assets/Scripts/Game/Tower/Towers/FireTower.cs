@@ -6,8 +6,8 @@ public class FireTower : Tower {
 
 	public GameObject fireParticlesPrefab;
 
-	protected override void AttackEnemy () {
-		base.AttackEnemy();
+	protected override void AttackEnemy (TowerType type) {
+		base.AttackEnemy(type);
 
 		GameObject particles = (GameObject) Instantiate(fireParticlesPrefab, transform.position + new Vector3(0, .5f), fireParticlesPrefab.transform.rotation);
 
