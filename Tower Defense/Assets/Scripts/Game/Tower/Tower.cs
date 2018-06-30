@@ -130,5 +130,13 @@ public class Tower : MonoBehaviour {
 		UIManager.Instance.ShowTowerInfoWindow(this);
 	}
 
+	public void ShowRemoveTowerInfo () {
+		UIManager.Instance.ShowRemoveTowerInfoWindow(this);
+	}
+
+	public void DestroyTower () {
+		Destroy(gameObject);
+	}
+
 
 }

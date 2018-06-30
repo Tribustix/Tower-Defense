@@ -15,6 +15,8 @@ public class UIManager : MonoBehaviour {
 	public GameObject enemyHealthBarPrefab;
 	public GameObject centerWindow;
 	public GameObject damageCanvas;
+	public GameObject towerToRemoveInfoWindow;
+
 
 	public Transform enemyHealthBars;
 
@@ -60,6 +62,13 @@ public class UIManager : MonoBehaviour {
 		towerToInfoWindow.SetActive(true);
 
 		UtilityMethods.MoveUiElementToWorldPosition(towerToInfoWindow.GetComponent<RectTransform>(), tower.transform.position);
+	}
+
+	public void ShowRemoveTowerInfoWindow (Tower tower) {
+		towerToRemoveInfoWindow.GetComponent<SellTowerWindow>().tower = tower;
+		towerToRemoveInfoWindow.SetActive(true);
+
+		UtilityMethods.MoveUiElementToWorldPosition(towerToRemoveInfoWindow.GetComponent<RectTransform>(), tower.transform.position);
 	}
 
 	public void ShowWinScreen () {
