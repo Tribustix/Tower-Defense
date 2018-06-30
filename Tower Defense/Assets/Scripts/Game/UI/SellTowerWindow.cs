@@ -60,7 +60,6 @@ public class SellTowerWindow : MonoBehaviour {
 				sellPrice = sellPrice + (basePrice / 2);
 			}else{
 				int levelPrice = Mathf.CeilToInt(basePrice * 1.5f * (i - 1));
-				Debug.Log(basePrice);
 				sellPrice = sellPrice + (levelPrice / 2);
 			}
 			
