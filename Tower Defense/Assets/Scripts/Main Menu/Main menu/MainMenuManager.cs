@@ -9,6 +9,14 @@ public class MainMenuManager : MonoBehaviour {
 		SceneManager.LoadScene("Game");
 	}
 
+	public void GoToOptions () {
+		SceneManager.LoadScene("Options");
+	}
+
+	public void BackToMainMenu () {
+		SceneManager.LoadScene("Main Menu");
+	}
+
 	public void QuitGame () {
 		Application.Quit();
 	}
