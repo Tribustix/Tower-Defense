@@ -4,21 +4,24 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour {
 
-	public float maxHealth = 100f;
-	public float health = 100f;
-	public float moveSpeed = 3f;
+	public float maxHealth;
+	public float health;
+	private float moveSpeed;
 	public float secondsEnemyStaysFrozen = 2f;
 
 	private float freezeTimer;
 
-	public int goldDrop = 10;
+	private int goldDrop;
 	public int pathIndex = 0;
 	public int wayPointIndex = 0;
 
 	public bool frozen;
 
 	void Start () {
+
+		SetEnemyByDifficulty();
 		EnemyManager.Instance.RegisterEnemy(this);
+		
 	}
 	
 	
@@ -95,6 +98,96 @@ public class Enemy : MonoBehaviour {
 		freezeTimer = 0f;
 		frozen = false;
 		moveSpeed *= 2;
+	}
+
+	void SetEnemyByDifficulty () {
+
+		
+
+		if(PlayerPrefs.HasKey("Difficulty")){
+
+			switch(PlayerPrefs.GetInt("Difficulty")){
+			
+			// Difficulty Easy
+
+			case 0:
+
+				SetEnemyValues(this.tag, 100f, 2f, 85);
+				
+
+
+			break;
+			
+			// Difficulty Medium
+			case 1:
+
+				SetEnemyValues(this.tag, 150, 3f, 170);
+				
+
+			break;
+
+			// Difficulty Hard
+
+			case 2:
+
+				SetEnemyValues(this.tag, 300, 3.5f, 200);
+				
+
+			break;	 
+
+			}
+			
+		}else{
+			Debug.Log("Pa casa");
+		}
+		
+
+
+	}
+
+	void SetEnemyValues (string type,  float maxHealthVal, float moveSpeedVal, int goldDropVal) {
+		
+		switch(type){
+
+					case "Fast":
+
+						maxHealth = maxHealthVal - (maxHealth * 25 / 100);
+
+						health = maxHealth;
+
+						moveSpeed = moveSpeedVal + (moveSpeedVal * 50 / 100);
+
+						goldDrop = goldDropVal + (goldDropVal * 25 / 100);
+				
+					break;
+
+					case "Normal":
+
+						maxHealth = maxHealthVal;
+
+						health = maxHealth;
+
+						moveSpeed = moveSpeedVal;
+
+						goldDrop = goldDropVal;
+
+
+
+					break;
+
+					case "Tank":
+
+						maxHealth = maxHealthVal + (maxHealthVal * 80 / 100);
+
+						health = maxHealth;
+
+						moveSpeed = moveSpeedVal - (moveSpeedVal * 25 / 100);
+
+						goldDrop = goldDropVal + (goldDropVal * 50 / 100);
+
+					break;
+				}	
+
 	}
 
 	

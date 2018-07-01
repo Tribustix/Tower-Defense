@@ -21,10 +21,17 @@ public class GameManager : MonoBehaviour {
 	void Awake	() {
 		Instance = this;
 		myCamera = Camera.main;
-		
+
 	}
 	
 	void Start () {
+
+		if(!PlayerPrefs.HasKey("Difficulty")){
+
+			Difficulty.Diff = Difficulty.Difficulties.Hard;
+			PlayerPrefs.SetInt("Difficulty", (int)Difficulty.Diff);
+
+		}
 
 	}
 	
