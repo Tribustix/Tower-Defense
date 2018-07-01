@@ -19,7 +19,9 @@ public class MusicSettings : MonoBehaviour {
 	void Awake() {
 		
 		audioMixer.GetFloat("VolumeSFX", out volumeSFX);
+		Debug.Log(volumeSFX);
 		audioMixer.GetFloat("VolumeMusic", out volumeMusic);
+		Debug.Log(volumeMusic);
 
 		if(volumeSFX == -80){
 			buttonOnSFX.SetActive(false);
@@ -50,29 +52,27 @@ public class MusicSettings : MonoBehaviour {
 
 		if(parameter == buttonOnSFX.name || parameter == buttonOffSFX.name){
 			
-			if(volumeSFX == 0){
-				audioMixer.SetFloat("VolumeSFX", -80);
+			if(volumeSFX == 0f){
+				audioMixer.SetFloat("VolumeSFX", -80f);
 				audioMixer.GetFloat("VolumeSFX", out volumeSFX);
 			}else{
-				audioMixer.SetFloat("VolumeSFX", 0);
+				audioMixer.SetFloat("VolumeSFX", 0f);
 				audioMixer.GetFloat("VolumeSFX", out volumeSFX);
 			}
-		
 		
 		}else{
 			
-			if(volumeMusic == 0){
+			if(volumeMusic == 0f){
 
-				audioMixer.SetFloat("VolumeMusic", -80);
+				audioMixer.SetFloat("VolumeMusic", -80f);
 				audioMixer.GetFloat("VolumeMusic", out volumeMusic);
 
 			}else{
 
-				audioMixer.SetFloat("VolumeMusic", 0);
+				audioMixer.SetFloat("VolumeMusic", 0f);
 				audioMixer.GetFloat("VolumeMusic", out volumeMusic);
 
 			}
-		
 
 		}
 
