@@ -19,9 +19,7 @@ public class MusicSettings : MonoBehaviour {
 	void Awake() {
 		
 		audioMixer.GetFloat("VolumeSFX", out volumeSFX);
-		Debug.Log(volumeSFX);
 		audioMixer.GetFloat("VolumeMusic", out volumeMusic);
-		Debug.Log(volumeMusic);
 
 		if(volumeSFX == -80){
 			buttonOnSFX.SetActive(false);
