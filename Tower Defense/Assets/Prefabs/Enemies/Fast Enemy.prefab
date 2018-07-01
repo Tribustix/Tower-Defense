@@ -59,7 +59,7 @@ GameObject:
   - component: {fileID: 65357940891614850}
   m_Layer: 0
   m_Name: Fast Enemy
-  m_TagString: Untagged
+  m_TagString: Fast
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -268,7 +268,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   health: 100
-  moveSpeed: 3
-  goldDrop: 10
+  secondsEnemyStaysFrozen: 2
   pathIndex: 0
   wayPointIndex: 0
+  frozen: 0

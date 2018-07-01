@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 114670495628978490}
   m_Layer: 0
   m_Name: Tanky Enemy
-  m_TagString: Enemy
+  m_TagString: Tank
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -312,10 +312,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   health: 100
-  moveSpeed: 3
-  goldDrop: 10
+  secondsEnemyStaysFrozen: 2
   pathIndex: 0
   wayPointIndex: 0
+  frozen: 0
 --- !u!114 &114979944497613884
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Enemy
   - MainMusic
+  - Fast
+  - Normal
+  - Tank
   layers:
   - Default
   - TransparentFX
