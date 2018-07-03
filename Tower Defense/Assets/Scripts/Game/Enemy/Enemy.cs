@@ -137,8 +137,6 @@ public class Enemy : MonoBehaviour {
 
 			}
 			
-		}else{
-			Debug.Log("Pa casa");
 		}
 		
 

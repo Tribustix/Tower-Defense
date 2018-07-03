@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour {
 	public int gold;
 	public int waveNumber;
 	public int escapedEnemies;
-	public int maxAllowedEscapedEnemies = 5;
+	public int maxAllowedEscapedEnemies;
 	public bool enemySpawningOver;
 
 	public Camera myCamera;

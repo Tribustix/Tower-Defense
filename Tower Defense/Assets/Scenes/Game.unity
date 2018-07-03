@@ -2666,7 +2666,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyWaves:
   - pathIndex: 0
-    startSpawnTimeInSeconds: 0
+    startSpawnTimeInSeconds: 5
     timeBetweenSpawnInSeconds: 2
     listOfEnemies:
     - {fileID: 1697488316523458, guid: 1a0640216f2a6764ab5313b648e9da0f, type: 2}
@@ -2676,6 +2676,31 @@ MonoBehaviour:
     - {fileID: 1192674923660268, guid: c6f64759ee7347045be3002c5d14675d, type: 2}
     - {fileID: 1000010028662668, guid: 1d5e14e4f665adc4cb382aef1c6750a4, type: 2}
     - {fileID: 1192674923660268, guid: c6f64759ee7347045be3002c5d14675d, type: 2}
+  - pathIndex: 0
+    startSpawnTimeInSeconds: 40
+    timeBetweenSpawnInSeconds: 2
+    listOfEnemies:
+    - {fileID: 1697488316523458, guid: 1a0640216f2a6764ab5313b648e9da0f, type: 2}
+    - {fileID: 1192674923660268, guid: c6f64759ee7347045be3002c5d14675d, type: 2}
+    - {fileID: 1000010028662668, guid: 1d5e14e4f665adc4cb382aef1c6750a4, type: 2}
+    - {fileID: 1192674923660268, guid: c6f64759ee7347045be3002c5d14675d, type: 2}
+    - {fileID: 1192674923660268, guid: c6f64759ee7347045be3002c5d14675d, type: 2}
+    - {fileID: 1000010028662668, guid: 1d5e14e4f665adc4cb382aef1c6750a4, type: 2}
+    - {fileID: 1192674923660268, guid: c6f64759ee7347045be3002c5d14675d, type: 2}
+  activeWave:
+    pathIndex: 0
+    startSpawnTimeInSeconds: 0
+    timeBetweenSpawnInSeconds: 0
+    listOfEnemies:
+    - {fileID: 1192674923660268, guid: c6f64759ee7347045be3002c5d14675d, type: 2}
+    - {fileID: 1697488316523458, guid: 1a0640216f2a6764ab5313b648e9da0f, type: 2}
+    - {fileID: 1000010028662668, guid: 1d5e14e4f665adc4cb382aef1c6750a4, type: 2}
+  enemyWave:
+    pathIndex: 0
+    startSpawnTimeInSeconds: 0
+    timeBetweenSpawnInSeconds: 0
+    listOfEnemies: []
+  activatedWaves: []
 --- !u!1 &525063968
 GameObject:
   m_ObjectHideFlags: 0
@@ -3083,7 +3108,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &575181980
 Transform:
   m_ObjectHideFlags: 0
