@@ -167,7 +167,7 @@ public class GameManager : MonoBehaviour {
 			break;
 
 			case "Hard":
-			gold = 1200;
+			gold = 1500;
 			maxAllowedEscapedEnemies = 3;
 			break;
 

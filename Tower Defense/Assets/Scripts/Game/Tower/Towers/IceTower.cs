@@ -26,6 +26,7 @@ public class IceTower : Tower {
 		GameObject ice = (GameObject)Instantiate(icePrefab, towerPieceToAim.position, Quaternion.identity);
 
 		ice.GetComponent<FollowingProjectile>().enemyToFollow = targetEnemy;
+		ice.GetComponent<Ice>().damage = attackPower;
 	} 
 
 }
