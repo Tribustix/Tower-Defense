@@ -215,9 +215,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40a59952715725f43923fe70f22fe8db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackPower: 12
+  attackPower: 17
   timeBetweenAttacksInSeconds: 3
-  aggroRadius: 8
+  aggroRadius: 6.5
   towerLevel: 1
   type: 1
   towerPieceToAim: {fileID: 0}

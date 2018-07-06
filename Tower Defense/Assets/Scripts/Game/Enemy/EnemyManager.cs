@@ -20,6 +20,7 @@ public class EnemyManager : MonoBehaviour {
 
 	public void Unregister (Enemy enemy) {
 		Enemies.Remove(enemy);
+		GameManager.Instance.score += (int)enemy.maxHealth;
 	}
 
 	// It returns a list of all enemies withing a certain range from the position given. LINQ line.

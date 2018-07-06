@@ -417,8 +417,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24e105b3b513eed40bfe708f30ac6585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackPower: 3
-  timeBetweenAttacksInSeconds: 2
+  attackPower: 10
+  timeBetweenAttacksInSeconds: 1
   aggroRadius: 5
   towerLevel: 1
   type: 2

@@ -26,5 +26,5 @@ public class DifficultyManager : MonoBehaviour {
 		
 	}
 
-
+	
 }

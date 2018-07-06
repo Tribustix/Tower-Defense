@@ -1,8 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[System.Serializable] public class EnemyWave {
+[Serializable] public class EnemyWave {
 
 	public int pathIndex;
 	public float startSpawnTimeInSeconds;

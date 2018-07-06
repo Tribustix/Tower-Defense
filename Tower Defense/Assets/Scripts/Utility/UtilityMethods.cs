@@ -1,5 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
 
 public class UtilityMethods{
@@ -25,4 +28,20 @@ public class UtilityMethods{
 		return  Quaternion.Slerp(currentRotation, targetRotation, Time.deltaTime * 10f);
 
 	}
+
+	public static List<ScoresEntry> LoadPreviousScores (string difficulty) {
+		try{
+			string levelDifficuty = difficulty;
+			var scoresFile = Application.streamingAssetsPath + "/Saved Data/" + levelDifficuty + "_scores.dat";
+			using (var stream = File.Open(scoresFile, FileMode.Open)){
+				var bin = new BinaryFormatter();
+				var scores = (List<ScoresEntry>)bin.Deserialize(stream);
+				return scores;
+			}
+		}catch (IOException ex) {
+			Debug.LogWarning("Couldn't load previous scores for : "+ difficulty + ".Exception " + ex.Message);
+			return new List<ScoresEntry>();
+		}
+	}
+
 }

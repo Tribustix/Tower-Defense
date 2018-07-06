@@ -23,6 +23,7 @@ public class UIManager : MonoBehaviour {
 	public Text txtGold;
 	public Text txtWave;
 	public Text txtEscapedEnemies;
+	public Text txtScore;
 
 	void Awake () {
 		Instance = this;
@@ -47,6 +48,11 @@ public class UIManager : MonoBehaviour {
 		
 		txtEscapedEnemies.text = "Escaped Enemies " + GameManager.Instance.escapedEnemies + " / " + GameManager.Instance.maxAllowedEscapedEnemies;
 
+	}
+
+	void SetScore () {
+
+		txtScore.text = "Score:"  + GameManager.Instance.score;
 	}
 
 	public void ShowAddTowerWindow (GameObject towerSlot) {
@@ -74,6 +80,7 @@ public class UIManager : MonoBehaviour {
 	public void ShowWinScreen () {
 		blackBackground.SetActive(true);
 		winGameWindow.SetActive(true);
+		SetScore();
 	}
 
 	public void ShowLoseScreen () {

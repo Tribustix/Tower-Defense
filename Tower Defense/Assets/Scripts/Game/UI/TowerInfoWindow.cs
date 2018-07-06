@@ -56,6 +56,7 @@ public class TowerInfoWindow : MonoBehaviour {
 			GameManager.Instance.gold -= upgradePrice;
 			tower.LevelUp();
 			gameObject.SetActive(false);
+			GameManager.Instance.score += upgradePrice;
 		}
 
 	}
