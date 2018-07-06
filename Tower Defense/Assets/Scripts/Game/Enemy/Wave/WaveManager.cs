@@ -17,6 +17,10 @@ public class WaveManager : MonoBehaviour {
 		Instance = this;
 	}
 
+	void Start () {
+		SetRandomPathIndex();
+	}
+
 	void Update () {
 
 		elapsedTime += Time.deltaTime;
@@ -74,6 +78,18 @@ public class WaveManager : MonoBehaviour {
 		activeWave = null;
 		activatedWaves.Clear();
 		enabled = false;
+	}
+
+	void SetRandomPathIndex () {
+
+		int i = 0;
+
+		while(i < enemyWaves.Count){
+			enemyWaves[i].pathIndex = Random.Range(0, WayPointManager.Instance.Paths.Count);
+			i++;
+		}
+
+		
 	}
 
 }

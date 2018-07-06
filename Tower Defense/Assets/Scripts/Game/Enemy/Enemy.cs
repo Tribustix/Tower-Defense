@@ -147,46 +147,46 @@ public class Enemy : MonoBehaviour {
 		
 		switch(type){
 
-					case "Fast":
+			case "Fast":
 
-						maxHealth = maxHealthVal - (maxHealth * 25 / 100);
+				maxHealth = maxHealthVal - (maxHealth * 25 / 100);
 
-						health = maxHealth;
+				health = maxHealth;
 
-						moveSpeed = moveSpeedVal + (moveSpeedVal * 50 / 100);
+				moveSpeed = moveSpeedVal + (moveSpeedVal * 50 / 100);
 
-						goldDrop = goldDropVal + (goldDropVal * 25 / 100);
-				
-					break;
+				goldDrop = goldDropVal + (goldDropVal * 25 / 100);
+		
+			break;
 
-					case "Normal":
+			case "Normal":
 
-						maxHealth = maxHealthVal;
+				maxHealth = maxHealthVal;
 
-						health = maxHealth;
+				health = maxHealth;
 
-						moveSpeed = moveSpeedVal;
+				moveSpeed = moveSpeedVal;
 
-						goldDrop = goldDropVal;
+				goldDrop = goldDropVal;
 
 
 
-					break;
+			break;
 
-					case "Tank":
+			case "Tank":
 
-						maxHealth = maxHealthVal + (maxHealthVal * 80 / 100);
+				maxHealth = maxHealthVal + (maxHealthVal * 80 / 100);
 
-						health = maxHealth;
+				health = maxHealth;
 
-						moveSpeed = moveSpeedVal - (moveSpeedVal * 25 / 100);
+				moveSpeed = moveSpeedVal - (moveSpeedVal * 25 / 100);
 
-						goldDrop = goldDropVal + (goldDropVal * 50 / 100);
+				goldDrop = goldDropVal + (goldDropVal * 50 / 100);
 
-					break;
-				}	
+			break;
+		}	
 
 	}
 
-	
+
 }
