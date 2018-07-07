@@ -6,6 +6,13 @@ using System.Linq;
 
 public class ScoresManager : MonoBehaviour {
 	
+	public static ScoresManager Instance;
+
+	void Awake () {
+		
+		Instance = this;
+	}
+
 	void Start () {
 		
 		DisplayScores("Medium");
@@ -26,4 +33,5 @@ public class ScoresManager : MonoBehaviour {
 		} 
 
 	}
+
 }
