@@ -57,12 +57,14 @@ public class UIManager : MonoBehaviour {
 		
 		txtEscapedEnemies.text = "Escaped Enemies " + GameManager.Instance.escapedEnemies + " / " + GameManager.Instance.maxAllowedEscapedEnemies;
 
-		txtTimeNextWave.text = "Next Wave in : "+WaveManager.Instance.enemyWaves[GameManager.Instance.waveNumber].startSpawnTimeInSeconds + " s";
-
 		if(actualWave != GameManager.Instance.waveNumber ){
 			
 			actualWave++;
 
+		}else if(GameManager.Instance.waveNumber == WaveManager.Instance.enemyWaves.Count){
+			
+			txtTimeNextWave.text = " ";	
+			
 		}else{
 
 			timeNextWave = WaveManager.Instance.elapsedTime;
