@@ -3276,6 +3276,9 @@ MonoBehaviour:
     - {fileID: 1697488316523458, guid: 1a0640216f2a6764ab5313b648e9da0f, type: 2}
     - {fileID: 1697488316523458, guid: 1a0640216f2a6764ab5313b648e9da0f, type: 2}
     - {fileID: 1697488316523458, guid: 1a0640216f2a6764ab5313b648e9da0f, type: 2}
+    - {fileID: 1697488316523458, guid: 1a0640216f2a6764ab5313b648e9da0f, type: 2}
+    - {fileID: 1697488316523458, guid: 1a0640216f2a6764ab5313b648e9da0f, type: 2}
+    - {fileID: 1697488316523458, guid: 1a0640216f2a6764ab5313b648e9da0f, type: 2}
   - pathIndex: 0
     startSpawnTimeInSeconds: 75
     timeBetweenSpawnInSeconds: 2
