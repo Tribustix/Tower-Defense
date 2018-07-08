@@ -24,6 +24,11 @@ public class UIManager : MonoBehaviour {
 	public Text txtWave;
 	public Text txtEscapedEnemies;
 	public Text txtScore;
+	public Text txtTimeNextWave;
+	public Text txtDifficulty;
+
+	public float timeNextWave;
+	public int actualWave = -1;
 
 	void Awake () {
 		Instance = this;
@@ -31,6 +36,10 @@ public class UIManager : MonoBehaviour {
 
 	void Start () {
 		
+		txtDifficulty.text = "Difficulty: " + GameManager.Instance.GetDifficulty();
+
+		timeNextWave = (int)WaveManager.Instance.enemyWaves[GameManager.Instance.waveNumber].startSpawnTimeInSeconds;
+
 	}
 
 
@@ -47,6 +56,20 @@ public class UIManager : MonoBehaviour {
 		txtWave.text = "Wave " + GameManager.Instance.waveNumber + " / " + WaveManager.Instance.enemyWaves.Count;
 		
 		txtEscapedEnemies.text = "Escaped Enemies " + GameManager.Instance.escapedEnemies + " / " + GameManager.Instance.maxAllowedEscapedEnemies;
+
+		txtTimeNextWave.text = "Next Wave in : "+WaveManager.Instance.enemyWaves[GameManager.Instance.waveNumber].startSpawnTimeInSeconds + " s";
+
+		if(actualWave != GameManager.Instance.waveNumber ){
+			
+			actualWave++;
+
+		}else{
+
+			timeNextWave = WaveManager.Instance.elapsedTime;
+			txtTimeNextWave.text = "Next Wave in : "+(int)timeNextWave+ " s " + " / "+ WaveManager.Instance.enemyWaves[GameManager.Instance.waveNumber].startSpawnTimeInSeconds + " s";
+
+		}
+		
 
 	}
 

@@ -7,7 +7,7 @@ public class WaveManager : MonoBehaviour {
 	public static WaveManager Instance;
 	public List<EnemyWave> enemyWaves = new List<EnemyWave>();
 	
-	private  float elapsedTime = 0f;
+	public float elapsedTime = 0f;
 	private EnemyWave activeWave;
 	private float spawnCounter = 0f;
 	private List<EnemyWave> activatedWaves = new List<EnemyWave>();
